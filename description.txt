@@ -1,0 +1,32 @@
+
+// пакеты для swagger (набрать в командной строке)
+
+npm i @nestjs/swagger swagger-ui-express
+
+// генерация папки roles при помощи nest (набрать в командной строке):
+nest generate module roles,
+nest generate service roles,
+nest generate controller roles
+
+// генерация модуля авторизации при помощи nest (набрать в командной строке):
+nest generate module auth,
+nest generate controller auth,
+nest generate service auth
+
+// пакеты для работы с токенами (набрать в командной строке):
+npm i @nestjs/jwt bcryptjs
+
+// генерация модуля работа с постами при помощи nest (набрать в командной строке):
+nest generate module posts,
+nest generate service posts,
+nest generate controller posts
+
+// генерация модуля работа с файлами при помощи nest (набрать в командной строке):
+nest generate module files,
+nest generate service files
+
+// пакет для генерации случайных имен (id):
+npm i uuid
+
+// пакет для работы со static:
+npm install --save @nestjs/serve-static
