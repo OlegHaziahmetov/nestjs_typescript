@@ -15,7 +15,7 @@ export class FilesService {
             if(!fs.existsSync(filePath)) {
                 fs.mkdirSync(filePath, {recursive: true})
             }
-            fs.writeFileSync(path.join(filePath, fileName), file.bufer)
+            fs.writeFileSync(path.join(filePath, fileName), file.buffer)
             return fileName;    
         } catch(e) {
             throw new HttpException( 'Ошибка при записи файла', HttpStatus.INTERNAL_SERVER_ERROR)
